@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+    <header><meta charset="utf-8"></header>
+<body>
+<script>
+    let a = +prompt("Введите вершину a"),
+        b = +prompt("Введите вершину b"),
+        c = +prompt("Введите вершину c");
+        if (a > b + c || b > a + c || c > a + b) {alert("Такой треугольник не существует!")}
+        let p = (a + b + c) / 2;
+        let S = Math.sqrt(p * (p - a) * (p - b) * (p - c));
+        alert("S = " + Math.floor(S) + "см");
+</script>
+</body>
+</html>

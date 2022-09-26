@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<head>
+</head>
+<body>
+    hi
+    <script>
+        function isPoly(s){
+            for (let i = 0; i < s.length / 2; i++){
+                if (s[i] != s[s.length - 1 - i]){
+                    return false;
+                }
+            }
+            return true;
+        }
+        let poly = "abcdedcba", test = "teststring";
+        alert(`Строка ${poly} - палиндром? - ${isPoly(poly)}`);
+        alert(`Строка ${test} - палиндром? - ${isPoly(test)}`);
+    </script>
+</body>
